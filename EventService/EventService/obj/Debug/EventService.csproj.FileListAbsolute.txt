@@ -1,0 +1,10 @@
+C:\Users\RADADIYA KRINISH\source\repos\EventService\EventService\bin\Debug\EventService.dll.config
+C:\Users\RADADIYA KRINISH\source\repos\EventService\EventService\bin\Debug\EventService.dll
+C:\Users\RADADIYA KRINISH\source\repos\EventService\EventService\bin\Debug\EventService.pdb
+C:\Users\RADADIYA KRINISH\source\repos\EventService\EventService\obj\Debug\EventService.csprojAssemblyReference.cache
+C:\Users\RADADIYA KRINISH\source\repos\EventService\EventService\obj\Debug\EventService.csproj.CoreCompileInputs.cache
+C:\Users\RADADIYA KRINISH\source\repos\EventService\EventService\obj\Debug\EventService.dll
+C:\Users\RADADIYA KRINISH\source\repos\EventService\EventService\obj\Debug\EventService.pdb
+C:\Users\RADADIYA KRINISH\source\repos\EventService\EventService\bin\Debug\App data\EventDB.ldf
+C:\Users\RADADIYA KRINISH\source\repos\EventService\EventService\bin\Debug\App data\EventDB.mdf
+C:\Users\RADADIYA KRINISH\source\repos\EventService\EventService\bin\Debug\App data\MyEventDb.mdf

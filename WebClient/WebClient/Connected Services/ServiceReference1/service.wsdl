@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/EventService" />
+      <xsd:import />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_Show_event_InputMessage">
+    <wsdl:part name="parameters" element="tns:Show_event" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Show_event_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Show_eventResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEvent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEvent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEvent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Events_InputMessage">
+    <wsdl:part name="parameters" element="tns:Events" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Events_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EventsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="Show_event">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Show_event" message="tns:IService1_Show_event_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Show_eventResponse" message="tns:IService1_Show_event_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SaveEvent" message="tns:IService1_SaveEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SaveEventResponse" message="tns:IService1_SaveEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateEvent" message="tns:IService1_UpdateEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateEventResponse" message="tns:IService1_UpdateEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteEvent" message="tns:IService1_DeleteEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteEventResponse" message="tns:IService1_DeleteEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Events">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Events" message="tns:IService1_Events_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EventsResponse" message="tns:IService1_Events_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Show_event">
+      <soap:operation soapAction="http://tempuri.org/IService1/Show_event" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveEvent">
+      <soap:operation soapAction="http://tempuri.org/IService1/SaveEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEvent">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEvent">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Events">
+      <soap:operation soapAction="http://tempuri.org/IService1/Events" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/EventService/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
